@@ -1,4 +1,4 @@
-class Log implements Serializable {
+class MyLog {
     def info(message) {
         echo "INFO: ${message}"
     }
