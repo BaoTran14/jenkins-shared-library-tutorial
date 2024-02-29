@@ -1,4 +1,4 @@
-class MyLog {
+public class MyLog implements Serializable {
     def info(message) {
         echo "INFO: ${message}"
     }
