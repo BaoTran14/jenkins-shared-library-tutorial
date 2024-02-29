@@ -1,11 +1,12 @@
 def call() {
     node {
         def lib = library('my-shared-lib').tutorial.jenkins
+        def log = lib.Log.new()
         stage("Log Info") {
-            lib.Log.info("This is log for information")
+            log.info("This is log for information")
         }
         stage("Log Warning") {
-            lib.Log.warning("This is log for warning")
+            log.warning("This is log for warning")
         }
     }
 }
