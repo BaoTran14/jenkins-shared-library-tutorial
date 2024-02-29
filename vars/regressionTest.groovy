@@ -1,8 +1,10 @@
+import tutorial.jenkins.MyLog
+
 def call() {
     node {
-//        def log = new tutorial.jenkins.MyLog()
+        def log = new MyLog()
         stage("Build:") {
-            new tutorial.jenkins.MyLog().info("This is log for information")
+            log.info("This is log for information")
             echo "Building..."
         }
         stage("I") {
