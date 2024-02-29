@@ -2,7 +2,7 @@ def call() {
     node {
 //        def log = new tutorial.jenkins.MyLog()
         stage("Build:") {
-//            log.info("This is log for information")
+            new tutorial.jenkins.MyLog().info("This is log for information")
             echo "Building..."
         }
         stage("I") {
