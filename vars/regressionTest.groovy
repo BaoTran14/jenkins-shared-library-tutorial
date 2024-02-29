@@ -1,4 +1,4 @@
-@Library('my-shared-lib') import tutorial.jenkins.*
+@Library('my-shared-lib') import tutorial.jenkins.Log
 def log = new Log();
 def call() {
     node {
@@ -6,7 +6,7 @@ def call() {
             log.info("This is log for information")
         }
         stage("Log Warning") {
-            log.info("This is log for warning")
+            log.warning("This is log for warning")
         }
     }
 }
