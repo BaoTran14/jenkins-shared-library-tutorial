@@ -1,2 +1,4 @@
 @Library('my-shared-lib') _
-regressionTest()
+import tutorial.jenkins.MyLog
+def myLog = new MyLog()
+regressionTest(myLog)

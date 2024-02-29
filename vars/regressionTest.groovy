@@ -1,23 +1,13 @@
-import tutorial.jenkins.MyLog
-
-def call() {
+def call(MyLog myLog) {
     node {
-        def log = new MyLog()
         stage("Build:") {
-            log.info("This is log for information")
             echo "Building..."
         }
-        stage("I") {
-//            log.warning("This is log for warning")
-            echo "I "
+        stage("Info") {
+            myLog.info("This is log for information")
         }
-        stage("Love") {
-//            log.warning("This is log for warning")
-            echo "Love  "
-        }
-        stage("You") {
-//            log.warning("This is log for warning")
-            echo "you"
+        stage("Warning") {
+            myLog.warning("This is log for warning")
         }
     }
 }
