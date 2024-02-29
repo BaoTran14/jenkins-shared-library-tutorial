@@ -1,5 +1,6 @@
-//@Library('my-shared-lib') import tutorial.jenkins.Log
-//def log = new Log();
+@Library('my-shared-lib')
+import tutorial.jenkins.Log
+def log = new Log();
 def call() {
     node {
         stage("Log Info") {
