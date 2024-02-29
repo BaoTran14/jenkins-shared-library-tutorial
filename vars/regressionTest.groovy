@@ -1,7 +1,7 @@
 def call(arg) {
     node {
         stage("Build:") {
-            echo "Building..."
+            echo "Building...${arg}"
         }
         stage("Info") {
             arg.info("This is log for information")
