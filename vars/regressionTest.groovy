@@ -1,5 +1,5 @@
 def call(arg) {
-    node {
+//    node {
         stage("Build:") {
             echo "Building...${arg}"
         }
@@ -9,5 +9,5 @@ def call(arg) {
         stage("Warning") {
             arg.warning("This is log for warning")
         }
-    }
+//    }
 }
