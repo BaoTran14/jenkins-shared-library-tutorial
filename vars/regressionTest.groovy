@@ -1,5 +1,5 @@
 //@Library('my-shared-lib')
-import tutorial.jenkins.Log
+import src.tutorial.jenkins.Log
 def log = new Log();
 def call() {
     node {
