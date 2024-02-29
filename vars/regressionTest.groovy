@@ -1,13 +1,13 @@
-def call(MyLog myLog) {
+def call(arg) {
     node {
         stage("Build:") {
             echo "Building..."
         }
         stage("Info") {
-            myLog.info("This is log for information")
+            arg.info("This is log for information")
         }
         stage("Warning") {
-            myLog.warning("This is log for warning")
+            arg.warning("This is log for warning")
         }
     }
 }
