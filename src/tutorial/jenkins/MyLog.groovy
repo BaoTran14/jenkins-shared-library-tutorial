@@ -1,9 +1,9 @@
 class MyLog {
     def info(message) {
-        bat "echo INFO: ${message}"
+        println("INFO: " + message);
     }
 
     def warning(message) {
-        bat "echo WARNING: ${message}"
+        println("WARNING: " + message);
     }
 }
