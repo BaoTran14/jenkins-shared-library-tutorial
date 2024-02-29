@@ -1,4 +1,4 @@
-@Library('my-shared-lib')
+//@Library('my-shared-lib')
 import tutorial.jenkins.Log
 def log = new Log();
 def call() {
