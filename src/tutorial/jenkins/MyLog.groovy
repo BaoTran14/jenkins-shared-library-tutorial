@@ -1,9 +1,9 @@
-class MyLog {
-    def info(message) {
-        println("INFO: " + message);
-    }
+package tutorial.jenkins
 
-    def warning(message) {
-        println("WARNING: " + message);
-    }
+def info(message) {
+    echo "INFO: ${message}"
+}
+
+def warning(message) {
+    echo "WARNING: ${message}"
 }
